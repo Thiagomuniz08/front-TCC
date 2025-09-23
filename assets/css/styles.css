@@ -112,7 +112,7 @@ nav ul li a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 50px 10%;
-    background-image: url(front/assets/img/imagem.gif);
+    background-image: url(/assets/img/imagem.gif);
     height: 550px;
     color: #000;
 }
