@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Ração - Pet Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="logo">4 PATAS</div>
+    <nav>
+        <ul>
+            <li><a href="/front/negocios.html"><i class=" fas fa-concierge-bell"></i> Serviços</a></li>
+            <li><a href="#"><i class="fas fa-tags"></i> Promoções</a></li>
+            <li><a href="front/sobre.html"><i class="fas fa-envelope"></i> Contato</a></li>
+            <li><a href="front/login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+        </ul>
+    </nav>
+</header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1> 4 PATAS<br> <span>PET SHOP
+
+            </span></h1>
+            <p>Alimentos saudáveis e deliciosos</p>
+            <p> para o seu pet!</p>
+        </div>
+        <div class="hero-image">
+            <video autoplay loop muted style="width: 300px; height: auto;">
+                <source src="front/assets/img/imagem.gif" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+              </video>
+        </div>
+    </section>
+    <br><br>
+<div class="carousel-container">
+  <button class="carousel-button left" onclick="moveCarousel(-1)">&#8249;</button>
+  <div class="carousel-track" id="carouselTrack">
+    <div class="carousel-card">
+      <a href="front/negocios.html"><img src="front/assets/img/yelo.jpg" alt="Higiene 1" class="card-image"></a>
+    </div>
+    <div class="carousel-card">
+      <a href="front/brinquedos.html"><img src="front/assets/img/2.jpg" alt="Higiene 2" class="card-image"></a>
+    </div>
+    <div class="carousel-card">
+      <a href="front/magnus.html"><img src="front/assets/img/3.jpg" alt="Higiene 3" class="card-image"></a>
+    </div>
+    <div class="carousel-card">
+      <a href="front/cat2.html"><img src="front/assets/img/Yellow Blue1.jpg" alt="Higiene 4" class="card-image"></a>
+    </div>
+        <div class="carousel-card">
+         <a href="front/tartaruga.html"><img src="front/assets/img/1.jpg" alt="Higiene 1" class="card-image"></a>
+    </div>
+    <div class="carousel-card">
+   <img src="front/assets/img/Yellow Blue Cute Illustration Pet Shop Presentation.jpg" alt="Higiene 2" class="card-image">
+    </div>
+    <div class="carousel-card">
+      <img src="front/assets/img/Yellow Blue Cute Illustration Pet Shop Presentation.jpg" alt="Higiene 3" class="card-image">
+    </div>
+    <div class="carousel-card">
+      <img src="front/assets/img/Yellow Blue Cute Illustration Pet Shop Presentation.jpg" alt="Higiene 4" class="card-image">
+    </div>
+  </div>
+  <button class="carousel-button right" onclick="moveCarousel(1)">&#8250;</button>
+</div>
+
+  <section class="best-seller">
+    <h2>Produtos Recomendados</h2>
+    <div class="carousel-container">
+      <button class="carousel-button left" onclick="moveProducts(-1)">&#8249;</button>
+      <div class="products" id="productsTrack" style="overflow:hidden;">
+        
+        <div class="product">
+          <div class="discount-tag">70% OFF</div>
+          <img src="front/assets/img/magnus.png" alt="Ração Premium">
+          <p>Ração Premium</p>
+          <span>R$ 59,90</span>
+          <span class="new-price">R$ 26,99</span>
+          <a href="front/magnus.html" class="btn">Adicionar ao Carrinho</a>
+        </div>
+        
+        <div class="product">
+          <div class="discount-tag">15% OFF</div>
+          <img src="front/assets/img/imagempremier1.png" alt="Brinquedo para Cães">
+          <p>Brinquedo para Cães</p>
+          <span>R$ 49,99</span>
+          <span class="new-price">R$ 42,49</span>
+          <a href="front/form.html" class="btn">Adicionar ao Carrinho</a>
+        </div>
+        
+        <div class="product">
+          <div class="discount-tag">20% OFF</div>
+          <img src="front/assets/img/origens.webp" alt="Suplemento Pet">
+          <p>Suplemento Pet</p>
+          <span>R$ 35,99</span>
+          <span class="new-price">R$ 28,79</span>
+          <a href="front/origens.html" class="btn">Adicionar ao Carrinho</a>
+        </div>
+        
+        <div class="product">
+          <div class="discount-tag">70% OFF</div>
+          <img src="front/assets/img/magnus.png" alt="Ração Premium">
+          <p>Ração Premium</p>
+          <span>R$ 59,90</span>
+          <span class="new-price">R$ 26,99</span>
+          <a href="front/magnus.html" class="btn">Adicionar ao Carrinho</a>
+        </div>
+        
+        <div class="product">
+          <div class="discount-tag">15% OFF</div>
+          <img src="front/assets/img/imagempremier1.png" alt="Brinquedo para Cães">
+          <p>Brinquedo para Cães</p>
+          <span>R$ 49,99</span>
+          <span class="new-price">R$ 42,49</span>
+          <a href="front/form.html" class="btn">Adicionar ao Carrinho</a>
+        </div>
+        
+        <div class="product">
+          <div class="discount-tag">20% OFF</div>
+          <img src="front/assets/img/origens.webp" alt="Suplemento Pet">
+          <p>Suplemento Pet</p>
+          <span>R$ 35,99</span>
+          <span class="new-price">R$ 28,79</span>
+          <a href="front/origens.html" class="btn">Adicionar ao Carrinho</a>
+        </div>
+
+                <div class="product">
+          <div class="discount-tag">20% OFF</div>
+          <img src="front/assets/img/origens.webp" alt="Suplemento Pet">
+          <p>Suplemento Pet</p>
+          <span>R$ 35,99</span>
+          <span class="new-price">R$ 28,79</span>
+          <a href="front/origens.html" class="btn">Adicionar ao Carrinho</a>
+        </div>
+
+                   <div class="product">
+          <div class="discount-tag">20% OFF</div>
+          <img src="front/assets/img/origens.webp" alt="Suplemento Pet">
+          <p>Suplemento Pet</p>
+          <span>R$ 35,99</span>
+          <span class="new-price">R$ 28,79</span>
+          <a href="front/origens.html" class="btn">Adicionar ao Carrinho</a>
+        </div>
+
+                           <div class="product">
+          <div class="discount-tag">20% OFF</div>
+          <img src="front/assets/img/origens.webp" alt="Suplemento Pet">
+          <p>Suplemento Pet</p>
+          <span>R$ 35,99</span>
+          <span class="new-price">R$ 28,79</span>
+          <a href="front/origens.html" class="btn">Adicionar ao Carrinho</a>
+        </div>
+
+        
+                           <div class="product">
+          <div class="discount-tag">20% OFF</div>
+          <img src="front/assets/img/origens.webp" alt="Suplemento Pet">
+          <p>Suplemento Pet</p>
+          <span>R$ 35,99</span>
+          <span class="new-price">R$ 28,79</span>
+          <a href="front/origens.html" class="btn">Adicionar ao Carrinho</a>
+        </div>
+        
+        
+      </div>
+    <button class="carousel-button right" onclick="moveProducts(1)">&#8250;</button>
+  </div>
+</section>
+
+    <section class="categories">
+        <h2>Compre por Categorias</h2>
+        <div class="category-grid">
+            <a href="front/dog.html"><img src="front/assets/img/dog1.jpg" alt="Foto do Autor" class="foto-perfil"></a>
+            <a href="front/cat.html"><img src="front/assets/img/cat2.jpg" alt="Foto do Autor" class="foto-perfil"></a>
+            <a href="front/tartaruga.html"><img src="front/assets/img/tortue.jpg" alt="Foto do Autor" class="foto-perfil"></a>
+            <a href="front/fishing.html"><img src="front/assets/img/fishing.jpg" alt="Foto do Autor" class="foto-perfil"></a>
+            <a href="front/bird.html"><img src="front/assets/img/bird.jpg" alt="Foto do Autor" class="foto-perfil"></a>
+            <a href="front/roedores.html"><img src="front/assets/img/roedodores.png" alt="Foto do Autor" class="foto-perfil"></a>
+        </div>
+    </section>
+    
+    <section class="best-seller">
+        <h2>Mais Vendidos</h2>
+        <div class="products">
+            <div class="product">
+                <img src="front/assets/img/magnus.png" alt="Ração Premium">
+                <p>Ração Premium</p>
+                <span>R$ 59,90</span>
+                <a href="front/magnus.html" class="btn">Comprar</a> 
+            </div>
+            <div class="product">
+                <img src="front/assets/img/imagempremier1.png" alt="Brinquedo para Cães">
+                <p>Brinquedo para Cães</p>
+                <span>R$ 29,90</span>
+                <a href="front/form.html" class="btn">Comprar</a>
+            </div>
+            <div class="product">
+                <img src="front/assets/img/origens.webp" alt="Suplemento Pet">
+                <p>Suplemento Pet</p>
+                <span>R$ 39,90</span>
+                <a href="front/origens.html" class="btn">Comprar</a>
+            </div>
+        </div>
+    </section>
+<script src="/front/assets/js/script.js"></script>
+    <footer>
+        <p>&copy; 2025 Pet Food - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
