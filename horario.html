@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Agendar Horário</title>
+  <link rel="stylesheet" href="assets/css/horario.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+<header>
+  <div class="logo"> 
+    <img src="/front/assets/img/4patas.png" alt="Logo 4 Patas"> Petshop 4 Patas
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/index.html"><i class="fas fa-home"></i> Início</a></li>
+      <li><a href="/front/negocios.html"><i class="fas fa-paw"></i> Serviços</a></li>
+      <li><a href="/front/sobre.html"><i class="fas fa-envelope"></i> Contato</a></li>
+      <li><a href="/front/login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="agendamento-container">
+    <!-- Mostra imagem e nome do serviço selecionado -->
+    <div id="servico-agendado-img" style="text-align:center; margin-bottom:20px;"></div>
+
+    <form class="agendamento-form">
+      <!-- Campo de serviço removido -->
+      <label for="data">Data:</label>
+      <input type="date" id="data" name="data" required>
+
+      <label for="hora">Horário:</label>
+      <input type="time" id="hora" name="hora" required min="08:00" max="18:00">
+
+      <button type="submit">Agendar</button>
+    </form>
+
+    <div id="mensagem-sucesso" class="mensagem-sucesso" style="display:none;">
+      Agendamento realizado com sucesso!
+    </div>
+  </section>
+</main>
+
+
+<script src="assets/js/horario.js"></script>
+
+
+</body>
+</html>

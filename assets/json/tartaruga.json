@@ -1,0 +1,102 @@
+[
+  {
+    "id": 71,
+    "nome": "Ração P/ Tartarugas Alcon Reptolife 30g",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 22.90,
+    "precoAntigo": 27.90,
+    "imagem": "assets/img/tartaruga.jpg",
+    "alt": "Suplemento Pet",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 72,
+    "nome": "Ração Gammarus Para Tartarugas Aquáticas Alcon Club 30g",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 15.99,
+    "precoAntigo": 19.99,
+    "imagem": "assets/img/tar2.jpg",
+    "alt": "Suplemento Pet",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 73,
+    "nome": "Ração Gammarus Para Tartarugas Aquáticas Alcon Club 110g",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 245.16,
+    "precoAntigo": 269.90,
+    "imagem": "assets/img/tar3.jpg",
+    "alt": "Suplemento Pet",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 74,
+    "nome": "Ração Para Tartarugas Poytara Tigre D'Água Adulto 350g",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 86.00,
+    "precoAntigo": 94.90,
+    "imagem": "assets/img/tar4.jpg",
+    "alt": "Suplemento Pet",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 75,
+    "nome": "Ração Jabuti Mini Sticks 75g - Poytara",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 38.90,
+    "precoAntigo": 44.90,
+    "imagem": "assets/img/tar5.jpg",
+    "alt": "Suplemento Pet",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 76,
+    "nome": "Ração Nutricon Turtle Baby 30g - Tartarugas Filhotes",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 24.90,
+    "precoAntigo": 29.90,
+    "imagem": "assets/img/tar6.jpg",
+    "alt": "Suplemento Pet",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 77,
+    "nome": "Ração Nutricon Para Jabuti 315g - Nutricon Pet",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 49.90,
+    "precoAntigo": 55.00,
+    "imagem": "assets/img/tar7.jpg",
+    "alt": "Suplemento Pet",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 78,
+    "nome": "Alimento Para Tartarugas e Répteis Nutricon Jabuti 1,2kg",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 215.99,
+    "precoAntigo": 239.90,
+    "imagem": "assets/img/tar8.jpg",
+    "alt": "Suplemento Pet",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 79,
+    "nome": "Ração Poytara Jabuti 300g",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 76.00,
+    "precoAntigo": 84.90,
+    "imagem": "assets/img/tar9.jpg",
+    "alt": "Suplemento Pet",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 80,
+    "nome": "Ração Alimento Tartarugas Jabuti Cágados Filhotes 80g Nutricon",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 29.90,
+    "precoAntigo": 34.90,
+    "imagem": "assets/img/tar10.jpg",
+    "alt": "Suplemento Pet",
+    "button": "Adicionar ao Carrinho"
+  }
+]

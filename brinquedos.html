@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/brinquedos.css">
+    <title>Brinquedos</title>
+</head>
+<body>
+    <header>
+    <div class="logo">Brinquedos</div>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="slide-menu" id="slide-menu">
+            <ul>
+                  <a href="../index.html" class="but">🏠 INICIO</a>
+                  <br>
+                <h2 id="frase-menu">Produtos para cães</h2>
+                <a href="dog.html" class="but">PREMIER</a>
+                <a href="magnus.html" class="but">MAGNUS</a>
+                <a href="form.html" class="but">FÓRMULA NATURAL</a>
+                <a href="origens.html" class="but">ORIGENS</a>
+                <a href="#" class="but">ACESSÓRIOS</a>
+                <a href="checkout.html" class="but">CARRINHO</a>
+            </ul>
+        </nav>
+         <button id="carrinho-topo" onclick="window.location.href='../index.html'">
+            ❌ <span id="quantidade-carrinho"></span>
+          </button>
+    </header>
+    <br><br>
+    <div class="banner"></div>
+    <br>
+    <div class="products">
+        <div class="product">
+            <img src="assets/img/brinquedos11.webp" alt="Ração Premium">
+            <p>Brinquedo Macaco de Pelúcia Marrom Buddy Flicks para Cães</p>
+            <span class="old-price"> R$ 39,̵9̵0̵ </span>
+            <div class="new-price"> R$35,91</div>
+             <button onclick="adicionarAoCarrinho(41, 'Brinquedo Macaco de Pelúcia Marrom Buddy Flicks para Cães', 'Brinquedo para Cães', 35.91, 'assets/img/brinquedos11.webp')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="assets/img/brinquedo2.png" alt="Brinquedo para Cães">
+            <p>Brinquedo Macaco de Pelúcia Preto Buddy Flicks para Cães</p>
+            <span class="old-price"> R$ 39,̵9̵0̵ </span>
+            <div class="new-price"> R$35,91</div>
+             <button onclick="adicionarAoCarrinho(42, 'Brinquedo Macaco de Pelúcia Preto Buddy Flicks para Cães', 'Brinquedo para Cães', 35.91, 'assets/img/brinquedo2.png')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="assets/img/briquedo3.png" alt="Suplemento Pet">
+            <p>Mordedor Pelúcia Big Duck Jambo</p>
+            <span class="old-price"> R$ 4̵1̵,̵9̵0̵</span>
+            <div class="new-price"> R$ 37,20</div>
+             <button onclick="adicionarAoCarrinho(43, 'Mordedor Pelúcia Big Duck Jambo', 'Suplemento Pet', 37.20, 'assets/img/briquedo3.png')">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product">
+            <img src="assets/img/mordedor-sustentavel-woodnpets-amicus-G-1.png" alt="Suplemento Pet">
+            <p>Brinquedo Mordedor Sustentável Wood Amicus</p>
+            <span class="old-price"> R$ 44,̵90̵ </span>
+            <div class="new-price"> R$38,16</div>
+             <button onclick="adicionarAoCarrinho(44, 'Brinquedo Mordedor Sustentável Wood Amicus', 'Suplemento Pet', 38.16, 'assets/img/mordedor-sustentavel-woodnpets-amicus-G-1.png')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="assets/img/brinquedo5.png" alt="Suplemento Pet">
+            <p>Brinquedo Comedouro Amicus Crazy Ball Azul e Branca</p>
+            <span class="old-price"> R$ 45,̵9̵0̵ </span>
+            <div class="new-price"> R$29,99</div>
+             <button onclick="adicionarAoCarrinho(45, 'Brinquedo Comedouro Amicus Crazy Ball Azul e Branca', 'Suplemento Pet', 29.99, 'assets/img/brinquedo5.png')">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+</section>
+<br>
+<section class="best-seller">
+    <div class="products">
+        <div class="product">
+            <img src="assets/img/brimquedo7.png" alt="Ração Premium">
+            <p>Brinquedo Bolinha Cordão Flicks</p>
+            <br>
+            <span class="old-price"> R$ 2̵4,̵9̵0̵ </span>
+            <div class="new-price"> R$14,90</div>
+             <button onclick="adicionarAoCarrinho(46, 'Brinquedo Bolinha Cordão Flicks', 'Ração Premium', 14.90, 'assets/img/brimquedo7.png')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="assets/img/brinquedi=o6.webp" alt="Brinquedo para Cães">
+            <p>Pelúcia Monkey Fleece Jambo Bege</p>
+            <span class="old-price"> R$ 119,̵9̵0̵ </span>
+            <div class="new-price"> R$59,95</div>
+             <button onclick="adicionarAoCarrinho(47, 'Pelúcia Monkey Fleece Jambo Bege', 'Brinquedo para Cães', 59.95, 'assets/img/brinquedi=o6.webp')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="assets/img/brinquedo8.webp" alt="Suplemento Pet">
+            <p>Bolinha Mini Travinha 2 Unidades Animania Verde e Azul</p>
+            <br>
+            <span class="old-price"> R$ 4̵1̵,̵9̵0̵</span>
+            <div class="new-price"> R$ 37,20</div>
+             <button onclick="adicionarAoCarrinho(48, 'Bolinha Mini Travinha 2 Unidades Animania Verde e Azul', 'Suplemento Pet', 37.20, 'assets/img/brinquedo8.webp')">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product">
+            <img src="assets/img/brinquedo9.webp" alt="Suplemento Pet">
+            <p>Brinquedo Interativo Labirinto Verde Pet Games</p>
+            <br>
+            <span class="old-price"> R$ 73,̵90 </span>
+            <div class="new-price"> R$62,81</div>
+             <button onclick="adicionarAoCarrinho(49, 'Brinquedo Interativo Labirinto Verde Pet Games', 'Suplemento Pet', 37.20, 'assets/img/brinquedo9.webp')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="assets/img/brinquedo10.png" alt="Suplemento Pet">
+            <p>Bolinha de Pontas Grande Azul Jambo</p>
+            <span class="old-price"> R$ 33,̵90 </span>
+            <div class="new-price"> R$27,51</div>
+            <button onclick="adicionarAoCarrinho(50, 'Bolinha de Pontas Grande Azul Jambo', 'Suplemento Pet', 27.51, 'assets/img/brinquedo10.png')">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+</section>
+<div id="carrinho-sidebar" class="sidebar">
+    <div class="conteudo">
+    <button class="fechar" onclick="fecharCarrinho()">X</button>
+      <h3>✅ Produto adicionado!</h3>
+      <p id="produto-adicionado"></p>
+      <button onclick="adicionarAoCarrinho(0, '', '', 0, '')">Adicionar mais produtos</button>
+      <button onclick="window.location.href='checkout.html'">Ver Carrinho</button>
+      <p class="frete-gratis">🎉 Frete grátis disponível!</p>
+      <h4>Você também pode gostar:</h4>
+      <div class="carrinho-produto">
+        <img src="assets/img/origens10.png" alt="Suplemento Pet">
+        <p>Origens Premium Especial Light Cães </p>
+        <p>Adultos Portes Médio e Grande Sabor Frango e Cereais</p>
+        <div class="screen-reader-text1"> R$242,20</div>
+        <button onclick="adicionarAoCarrinho(20, 'Origens Premium Especial Light Cães Adultos Portes Médio e Grande Sabor Frango e Cereais', 'Suplemento Pet', 242.20, 'assets/img/origens10.png')">Adicionar ao Carrinho</button>
+    </div>
+    <div class="carrinho-produto">
+        <img src="assets/img/origens7.png" alt="Brinquedo para Cães">
+        <p>Origens Premium Especial Raças Específicas Cães Adultos Pit Bull e Rottweiler</p>
+        <div class="screen-reader-text1"> R$257,20</div>
+        <button onclick="adicionarAoCarrinho(17, 'Origens Premium Especial Raças Específicas Cães Adultos Pit Bull e Rottweiler', 'Ração Premium', 257.20, 'assets/img/origens7.png')">Adicionar ao Carrinho</button>
+    </div>
+    <div class="carrinho-produto">
+        <img src="assets/img/origens3.webp" alt="Suplemento Pet">
+        <p>Origens Premium Especial Cães Adultos Sabor Carne e Cereais</p>
+        <div class="screen-reader-text1"> R$ 37,20</div>
+        <button onclick="adicionarAoCarrinho(13, 'Origens Premium Especial Cães Adultos Sabor Carne e Cereais', 'Suplemento Pet', 37.20, 'assets/img/origens3.webp')">Adicionar ao Carrinho</button>
+    </div>
+<script src="assets/js/funcoes.js"></script>
+    
+</body>
+</html>

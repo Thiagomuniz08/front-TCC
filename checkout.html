@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="assets/css/checkout.css" />
+</head>
+<body>
+  <header>
+     <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="slide-menu" id="slide-menu">
+      <ul>
+        <li><h2>Produtos para:</h2></li>
+        <li><a href="magnus.html" class="but">CÃES</a></li>
+        <li><a href="cat2.html" class="but">GATOS</a></li>
+        <li><a href="#" class="but">PÁSSAROS</a></li>
+        <li><a href="tartaruga.html" class="but">TARTARUGAS</a></li>
+        <li><a href="#" class="but">PEIXES</a></li>
+        <li><a href="#" class="but">ROEDORES</a></li>
+      </ul>
+    </nav>
+    <div class="logo">Checkout</div>
+    <button id="voltar-topo" onclick="window.location.href='../index.html'">
+      ❌ <span id="quantidade-carrinho"></span>
+    </button>
+  </header>
+
+  <main>
+    <div class="checkout-container">
+      <h1>Finalizar Pedido</h1>
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Qtd</th>
+              <th>Preço</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-produtos">
+            <!-- Os itens serão preenchidos pelo JS -->
+          </tbody>
+        </table>
+      </div>
+      <div class="total">
+        Total: <span id="total-geral">R$ 0,00</span>
+      </div>
+      <button onclick="irParaPagamento()" class="btn-pagar">Seguir para o pagamento</button>
+    </div>
+  </main>
+  <script src="assets/js/checkout.js"></script>
+  <script src="https://js.stripe.com/v3/"></script>
+  <script>
+    // Menu responsivo
+    const menuToggle = document.getElementById('menu-toggle');
+    const slideMenu = document.getElementById('slide-menu');
+    menuToggle.onclick = () => {
+      slideMenu.classList.toggle('active');
+      menuToggle.classList.toggle('active');
+    };
+    // Fecha menu ao clicar fora
+    document.addEventListener('click', function(e) {
+      if (!slideMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        slideMenu.classList.remove('active');
+        menuToggle.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>

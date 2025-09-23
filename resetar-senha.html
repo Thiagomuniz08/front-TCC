@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redefinir Senha - 4 Patas</title>
+  <link rel="stylesheet" href="assets/css/resetar-senha.css">
+</head>
+<body>
+<header>
+  <div class="logo">4 PATAS</div>
+</header>
+
+<div class="reset-container">
+  <h1>Redefinir Senha</h1>
+  <form id="formResetar">
+    <div class="input-icon">
+      <i class="fas fa-lock"></i>
+      <br>
+      <input type="password" name="novaSenha" placeholder="Nova Senha" required>
+    </div>
+    <button type="submit">Alterar Senha</button>
+  </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+<script>
+const params = new URLSearchParams(window.location.search);
+const token = params.get('token');
+
+document.getElementById('formResetar').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const novaSenha = e.target.novaSenha.value;
+
+    const response = await fetch('http://localhost:3000/resetar-senha', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ token, novaSenha })
+    });
+
+    const data = await response.json();
+    alert(data.message);
+    if (response.ok) {
+        window.location.href = 'login.html';
+    }
+});
+</script>
+</body>
+</html>

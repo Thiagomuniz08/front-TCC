@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/tartaruga.css">
+    <title>Tartaruga</title>
+</head>
+<body>
+    <header>
+    <div class="logo">Tartaruga</div>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="slide-menu" id="slide-menu">
+                <a href="../index.html" class=but>INÍCIO</a>
+                <a href="checkout.html" class="but">CARRINHO</a>
+        </nav>
+
+        <button id="carrinho-topo" onclick="window.location.href='../index.html'">
+            ❌ <span id="quantidade-carrinho"></span>
+          </button>
+    </header>
+    <div class="banner"></div>
+    <main></main>
+    </div>
+</section>
+<div id="carrinho-sidebar" class="sidebar">
+    <div class="conteudo">
+    <button class="fechar" onclick="fecharCarrinho()">X</button>
+      <h3>✅ Produto adicionado!</h3>
+      <p id="produto-adicionado"></p>
+      <button onclick="adicionarAoCarrinho(0, '', '', 0, '')">Adicionar mais produtos</button>
+      <button onclick="window.location.href='checkout.html'">Ver Carrinho</button>
+      <p class="frete-gratis">🎉 Frete grátis disponível!</p>
+      <h4>Você também pode gostar:</h4>
+      <div class="carrinho-produto">
+        <img src="assets/img/origens10.png" alt="Suplemento Pet">
+        <p>Origens Premium Especial Light Cães </p>
+        <p>Adultos Portes Médio e Grande Sabor Frango e Cereais</p>
+        <div class="screen-reader-text1"> R$242,20</div>
+        <button onclick="adicionarAoCarrinho(20, 'Origens Premium Especial Light Cães Adultos Portes Médio e Grande Sabor Frango e Cereais', 'Suplemento Pet', 242.20, 'assets/img/origens10.png')">Adicionar ao Carrinho</button>
+    </div>
+    <div class="carrinho-produto">
+        <img src="assets/img/origens7.png" alt="Brinquedo para Cães">
+        <p>Origens Premium Especial Raças Específicas Cães Adultos Pit Bull e Rottweiler</p>
+        <div class="screen-reader-text1"> R$257,20</div>
+        <button onclick="adicionarAoCarrinho(17, 'Origens Premium Especial Raças Específicas Cães Adultos Pit Bull e Rottweiler', 'Ração Premium', 257.20, 'assets/img/origens7.png')">Adicionar ao Carrinho</button>
+    </div>
+    <div class="carrinho-produto">
+        <img src="assets/img/origens3.webp" alt="Suplemento Pet">
+        <p>Origens Premium Especial Cães Adultos Sabor Carne e Cereais</p>
+        <div class="screen-reader-text1"> R$ 37,20</div>
+        <button onclick="adicionarAoCarrinho(13, 'Origens Premium Especial Cães Adultos Sabor Carne e Cereais', 'Suplemento Pet', 37.20, 'assets/img/origens3.webp')">Adicionar ao Carrinho</button>
+    </div>
+<script src="assets/js/tartaruga.js"></script>
+</body>
+</html>

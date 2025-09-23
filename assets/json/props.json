@@ -1,0 +1,119 @@
+[
+  {
+    "id": 133,
+    "nome": " Médio 200ml - Malha Fina - Azul Com Base Branca",
+    "descricao": "Ração Nutrópica Calopsita Gourmet 300 g",
+    "preco": 40.41,
+    "precoAntigo": 43.90,
+    "imagem": "assets/img/prps.webp",
+    "alt": "Bebedouro",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 132,
+    "nome": " Malha Fina - 100ml",
+    "preco": 269.99,
+    "precoAntigo": 289.99,
+    "imagem": "assets/img/prps1.webp",
+    "alt": "Bebedouro",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 133,
+    "nome": "Malha Fina - 300ml",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 34.19,
+    "precoAntigo": 37.90,
+    "imagem": "assets/img/prps2.webp",
+    "alt": "Bebedouro",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 134,
+    "nome": "Comedouro Automático Grande - Malha Larga",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 86.00,
+    "precoAntigo": 94.90,
+    "imagem": "assets/img/prps3.webp",
+    "alt": "Comedouro",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 135,
+    "nome": "Porta Vitaminas",
+    "preco": 2.50,
+    "precoAntigo": 5.00,
+    "imagem": "assets/img/propos.webp",
+    "alt": "Porta Vitaminas",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 136,
+    "nome": "Porta Frutas - Milho",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 3.90,
+    "precoAntigo": 8.90,
+    "imagem": "assets/img/propos1.webp",
+    "alt": "Porta Frutas",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 137,
+    "nome": "Gaiola Criadeira - Malha Fina",
+    "preco": 320.90,
+    "precoAntigo": 349.99,
+    "imagem": "assets/img/gaiola.webp",
+    "alt": "Gaiola Criadeira",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 138,
+    "nome": "Gaiola N.8 Imbuia - Marchetada - Inox",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 720.00,
+    "precoAntigo": 750.00,
+    "imagem": "assets/img/gaiola1.webp",
+    "alt": "Gaiola N.8",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 139,
+    "nome": "Gaiola para Calopsita com Pedestal - Completa",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 430.00,
+    "precoAntigo": 480.00,
+    "imagem": "assets/img/gaiola2.webp",
+    "alt": "Gaiola ",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 130,
+    "nome": "Ração Extrusada Megazoo Regular Bits para Calopsitas e Ring Necks",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 36.90,
+    "precoAntigo": 40.90,
+    "imagem": "assets/img/pas10.jpg",
+    "alt": "Megazoo",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 131,
+    "nome": "Ração Extrusada Megazoo Regular Bits para Calopsitas e Ring Necks",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 24.90,
+    "precoAntigo": 24.90,
+    "imagem": "assets/img/pas1.png",
+    "alt": "Megazoo",
+    "button": "Adicionar ao Carrinho"
+  },
+  {
+    "id": 132,
+    "nome": "Ração Extrusada Megazoo para Papagaio Regular 600g",
+    "descricao": "A ração perfeita para sua tartaruga",
+    "preco": 38.60,
+    "precoAntigo": 44.90,
+    "imagem": "assets/img/pas12.jpg",
+    "alt": "Megazoo",
+    "button": "Adicionar ao Carrinho"
+  }
+]

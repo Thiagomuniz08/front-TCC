@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagamento Seguro</title>
+  <script src="https://js.stripe.com/basil/stripe.js"></script>
+  <link rel="stylesheet" href="assets/css/checkout.css" />
+</head>
+<body>
+  <header>
+    <!-- Repita seu header estilizado aqui, se quiser -->
+    <div class="logo">Pagamento Seguro</div>
+     <button id="voltar-topo" onclick="window.location.href='checkout.html'">
+      ❌ <span id="quantidade-carrinho"></span>
+    </button>
+  </header>
+  <main>
+    <div id="checkout" style="max-width: 500px; margin: 40px auto;"></div>
+  </main>
+  <script src="assets/js/pagamento.js"></script>
+</body>
+</html>

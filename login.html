@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login e Cadastro - Pet Shop</title>
+  <link rel="stylesheet" href="assets/css/login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="logo">4 PATAS</div>
+    <nav>
+        <ul>
+            <li><a href="../index.html"><i class="fas fa-home"></i> Início</a></li>
+          <li><a href="negocios.html"><i class="	fas fa-concierge-bell"></i> Serviços</a></li>
+            <li><a href="#"><i class="fas fa-tags"></i> Promoções</a></li>
+            <li><a href="sobre.html"><i class="fas fa-envelope"></i> Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container" id="container">
+  <div class="form-container sign-up-container">
+    <form id="formCadastro">
+      <h1>Criar Conta</h1>
+      <div class="input-icon">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Nome" name="nome" required />
+      </div>
+      <div class="input-icon">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="Email" name="email" required />
+      </div>
+      <div class="input-icon">
+        <i class="fas fa-phone"></i>
+        <input type="tel" placeholder="Telefone" name="telefone" required />
+      </div>
+      <div class="input-icon">
+  <i class="fas fa-lock"></i>
+  <input type="password" placeholder="Senha" name="senha" id="senhaCadastro" required />
+  <img src="https://img.icons8.com/?size=100&id=60022&format=png&color=000000" id="toggleSenhaCadastro" class="toggle-senha" alt="Mostrar senha" style="width:24px; height:24px; position:absolute; right:10px; top:50%; transform:translateY(-50%); cursor:pointer;" />
+      </div>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+
+  <div class="form-container sign-in-container">
+    <form id="formLogin">
+      <h1>Login</h1>
+      <div class="input-icon">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="Email" name="email" required />
+      </div>
+      <div class="input-icon">
+  <i class="fas fa-lock"></i>
+  <input type="password" placeholder="Senha" name="senha" id="senhaLogin" required />
+  <img src="https://img.icons8.com/?size=100&id=60022&format=png&color=000000" id="toggleSenhaLogin" class="toggle-senha" alt="Mostrar senha" style="width:24px; height:24px; position:absolute; right:10px; top:50%; transform:translateY(-50%); cursor:pointer;" />
+  <br>
+      </div>
+       <a href="#" id="esqueceuSenha" style="display:block; margin-top:10px; color:#f90;">Esqueceu sua senha?</a>
+       <br>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-left">
+        <h1>Bem-vindo de volta!</h1>
+        <p>Para continuar conectado, faça login com suas informações</p>
+        <button class="ghost" id="signIn">Login</button>
+      </div>
+      <div class="overlay-panel overlay-right">
+        <h1>Olá, amigo!</h1>
+        <p>Insira seus dados e comece a jornada com a gente</p>
+        <button class="ghost" id="signUp">Cadastrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Recuperar Senha -->
+<div id="modalRecuperarSenha" class="modal">
+  <div class="modal-content">
+    <span id="fecharModalRecuperar" class="close">&times;</span>
+    <h2>Recuperar Senha</h2>
+    <form id="formRecuperarSenha">
+      <input type="email" name="emailRecuperacao" placeholder="Digite seu email" required />
+      <button type="submit">Enviar link de recuperação</button>
+    </form>
+  </div>
+</div>
+
+
+<script src="assets/js/login.js"></script>
+</body>
+</html>

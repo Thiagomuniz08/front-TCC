@@ -1,0 +1,420 @@
+header {
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color:	#18233d;
+    padding: 20px 10%;
+    color: #fff;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #18233d;
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffeb3b;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#carrinho-topo {
+  background: #3c3b3af7;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-left: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+#carrinho-topo:hover {
+  background: #fdd835;
+}
+
+
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffeb3b; 
+    color: #333; 
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #fdd835;
+}
+  
+button.fechar {
+    background-color: #000000; /* Cor de fundo vermelho */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    position: absolute; /* Posicionamento absoluto */
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Distância da direita */
+    width: 30px; /* Largura do botão */
+    height: 30px; /* Altura do botão */
+    border-radius: 50%; /* Botão circular */
+    display: flex; /* Centraliza o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    transition: background-color 0.3s ease; 
+}
+
+button.fechar:hover {
+    background-color: #000000;
+    color : #fff; /* Cor do texto ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+.but {
+    display: inline-block;
+    padding: 12px 24px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.but:hover {
+    background-color: #fdd835;
+    color: #333;
+}
+
+
+.banner {
+    background: url('../img/alcon.png') no-repeat center center;
+    background-size: cover; 
+    display: block;
+    height: 410px; 
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+
+.menu-toggle {
+    font-size: 30px;
+    padding: 10px;
+    background-color: #fff;
+    color: #28314f;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border: none;
+    border-radius: 5px;
+    z-index: 1000;
+}
+.slide-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #343434;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+.slide-menu.active{
+    left: 0;
+}
+.menu-toggle.active{
+    left: 250px;
+}
+
+
+.slide-menu ul {
+    list-style: none;
+    padding: 0;
+}
+.slide-menu ul li {
+    padding: 15px;
+}
+.slide-menu ul li a {
+    color:white;
+    text-decoration: none;
+    display: black;
+}
+.slide-menu ul li a:hover {
+    background-color:#28a745;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -520px; /* Escondido fora da tela */
+    width: 400px; /* reduzido para melhor adaptação */
+    height: 100%;
+    background: #fff;
+    border-left: 2px solid #ccc;
+    padding: 20px;
+    box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+    transition: right 0.3s ease-in-out;
+    z-index: 9999;
+    overflow-y: auto; 
+  }
+  .sidebar.ativo {
+    right: 0; 
+  }
+  
+  .frete-gratis {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .sugestoes {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .sugestoes li {
+    margin-bottom: 5px;
+  }
+  
+  .carrinho-produto {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 12px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+
+  }
+  
+  .carrinho-produto img {
+    width: 120px; /* menor imagem */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .conteudo img {
+    width: 30%;
+    display: flex;
+    object-fit: contain;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    margin-bottom: 12px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    text-align: center;
+
+  }
+
+  main{
+     margin: 110px;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card {
+    height: 400px; /* igual ao .card */
+    width: 200px;  /* igual ao .card */
+    margin: 10px;
+    padding: 16px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgb(255, 255, 255); /* mantido igual ao .card */
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 160px; /* igual ao .card */
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 15px;
+    font-weight: bold;
+    min-height: 50px;
+    margin: 0;
+}
+
+.card .price-old {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #888;
+}
+
+.card .price-new {
+    font-size: 18px;
+    font-weight: bold;
+    color: #E53935;
+}
+
+.card button {
+    background-color: #FFEB3B;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: auto;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background-color: #fdd835;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 5%;
+    }
+
+    .logo {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .banner {
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        right: -100%; /* Esconde toda a largura da tela */
+    }
+
+    .sidebar.ativo {
+        right: 0;
+    }
+
+    .carrinho-produto {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .conteudo img {
+        width: 100%;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    main {
+        margin: 20px;
+    }
+
+    .btn, .but, .add-to-cart-button, button {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    button.fechar {
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
+        top: 5px;
+        right: 5px;
+    }
+}

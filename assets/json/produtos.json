@@ -1,0 +1,122 @@
+[
+    {
+        "id": 101,
+        "nome": "Alimento completo para peixes ornamentais.",
+        "descricao": "Alimento completo para peixes ornamentais.",
+        "preco": 25.90,
+        "precoAntigo": 32.00,
+        "imagem": "assets/img/prod.jpeg",
+        "alt": "Alcon Allium",
+        "button": "Adicionar ao Carrinho"
+    },
+    {
+        "id": 102,
+        "nome": "Alcon Club Carpas",
+        "descricao": "Ração especial para carpas e peixes de lago.",
+        "preco": 39.50,
+        "precoAntigo": 45.00,
+        "imagem": "assets/img/prod1.jpg",
+        "alt": "Alcon Thymus",
+        "button": "Adicionar ao Carrinho"
+    },
+    {
+        "id": 103,
+        "nome": "Alcon Flocos Ornamentais",
+        "descricao": "Alcon Herbal",
+        "preco": 18.90,
+        "precoAntigo": 22.00,
+        "imagem": "assets/img/prod2.jpg",
+        "alt": "Alcon Herbal",
+        "button": "Adicionar ao Carrinho"
+    },
+    {
+        "id": 104,
+        "nome": "Alcon Betta",
+        "descricao": "Alimento completo em flocos para peixes filhotes.",
+        "preco": 12.50,
+        "precoAntigo": 15.00,
+        "imagem": "assets/img/prod3.jpg",
+        "alt": "Alcon Alevinos",
+        "button": "Adicionar ao Carrinho"
+    },
+    {
+        "id": 105,
+        "nome": "Alcon Granulado Kinguios",
+        "descricao": "Ração granulada para Kinguios.",
+        "preco": 21.00,
+        "precoAntigo": 26.00,
+        "imagem": "assets/img/prod4.jpg",
+        "alt": "Alcon Basic Tabs",
+        "button": "Adicionar ao Carrinho"
+    },
+    {
+        "id": 106,
+        "nome": "Alcon Fundo",
+        "descricao": "Ração para peixes de fundo.",
+        "preco": 19.90,
+        "precoAntigo": 24.00,
+        "imagem": "assets/img/prod5.jpg",
+        "alt": "Alcon Shaimp",
+        "button": "Adicionar ao Carrinho"
+    },
+    {
+        "id": 107,
+        "nome": "Alcon Mix Aquário",
+        "descricao": "Ração mix para peixes de aquário.",
+        "preco": 29.90,
+        "precoAntigo": 35.00,
+        "imagem": "assets/img/prod6.jpg",
+        "alt": "Aquário Boyu Led EA-80E 95L",
+        "button": "Adicionar ao Carrinho"
+    },
+    {
+        "id": 108,
+        "nome": "Alcon Natural",
+        "descricao": "Ração natural para peixes.",
+        "preco": 34.90,
+        "precoAntigo": 40.00,
+        "imagem": "assets/img/prod7.jpg",
+        "alt": "Aquário Boyu 60 99 Litros",
+        "button": "Adicionar ao Carrinho"
+    },
+    {
+        "id": 109,
+        "nome": "Alcon Neon",
+        "descricao": "Ração colorida para peixes ornamentais.",
+        "preco": 22.90,
+        "precoAntigo": 28.00,
+        "imagem": "assets/img/prod8.jpg",
+        "alt": "Aquário Curvo Led EA-60E 68L",
+        "button": "Adicionar ao Carrinho"
+    },
+    {
+        "id": 110,
+        "nome": "Alcon Premium",
+        "descricao": "Ração premium para peixes de aquário.",
+        "preco": 44.90,
+        "precoAntigo": 52.00,
+        "imagem": "assets/img/prod9.jpg",
+        "alt": "Aquário de Vidro Retangular",
+        "button": "Adicionar ao Carrinho"
+    },
+     {
+        "id": 110,
+        "nome": "Alcon Premium",
+        "descricao": "Ração premium para peixes de aquário.",
+        "preco": 44.90,
+        "precoAntigo": 52.00,
+        "imagem": "assets/img/prod9.jpg",
+        "alt": "Aquário de Vidro Retangular",
+        "button": "Adicionar ao Carrinho"
+    },
+     {
+        "id": 110,
+        "nome": "Alcon Premium",
+        "descricao": "Ração premium para peixes de aquário.",
+        "preco": 44.90,
+        "precoAntigo": 52.00,
+        "imagem": "assets/img/prod9.jpg",
+        "alt": "Aquário de Vidro Retangular",
+        "button": "Adicionar ao Carrinho"
+    }
+]
