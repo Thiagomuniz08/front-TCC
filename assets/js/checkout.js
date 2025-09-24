@@ -61,7 +61,7 @@ const stripe = Stripe('pk_test_51RkRYN2NDHd3ApIM28O0QMgeTuYzJyVi3xUthi7yEksdPT8l
 
 async function realizarPagamento() {
   try {
-    const response = await fetch('http://localhost:3000/criar-checkout', {
+    const response = await fetch('https://back-tcc.vercel.app/criar-checkout', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
