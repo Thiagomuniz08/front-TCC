@@ -1,26 +1,28 @@
-const stripe = Stripe('pk_test_51RhLX8EKH8PZEo1DXBoRTGpT7j8M2E3jRwm8N7bQDr7dZQNcfeYE2SUYk4mfUZscWE9z7DKGchl77NDwDAohgVrN00mI4Y59Kz');
+ document.addEventListener("DOMContentLoaded", () => {
+      const dados = JSON.parse(localStorage.getItem("pixPagamento"));
+      if (!dados) {
+        alert("Dados de pagamento não encontrados.");
+        window.location.href = "checkout.html";
+        return;
+      }
 
-initialize();
-
-async function initialize() {
-  const fetchClientSecret = async () => {
-    // Envie o carrinho para o backend
-    const carrinhoJSON = localStorage.getItem('carrinho');
-    const carrinho = carrinhoJSON ? JSON.parse(carrinhoJSON) : [];
-    const response = await fetch("http://localhost:3000/create-checkout-session", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ carrinho }),
+      if (dados.pixQrCode || dados.pixCopiaCola) {
+        document.getElementById("pix-container").style.display = "block";
+        if (dados.pixQrCode) {
+          document.getElementById("pix-qr").src = dados.pixQrCode;
+        }
+        if (dados.pixCopiaCola) {
+          document.getElementById("pix-copia").value = dados.pixCopiaCola;
+        }
+      } else if (dados.linkPagamento) {
+        document.getElementById("link-container").style.display = "block";
+        document.getElementById("link-pagamento").href = dados.linkPagamento;
+      }
     });
-    const { clientSecret } = await response.json();
-    return clientSecret;
-  };
 
-  // Inicializa o checkout embutido
-  const checkout = await stripe.initEmbeddedCheckout({
-    fetchClientSecret,
-  });
-
-  // Monta o checkout no div
-  checkout.mount('#checkout');
-}
+    function copiar() {
+      const textArea = document.getElementById("pix-copia");
+      textArea.select();
+      document.execCommand("copy");
+      alert("Código PIX copiado!");
+    }

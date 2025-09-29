@@ -3,46 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <title>Status do Pagamento</title>
-  <link rel="stylesheet" href="assets/css/checkout-retorno.css" />
 </head>
 <body>
   <div class="status-container">
-    <h1 id="titulo">Processando...</h1>
-    <p id="mensagem"></p>
+    <h1 id="titulo">✅ Pedido registrado!</h1>
+    <p id="mensagem">Assim que o pagamento for confirmado pelo Asaas, você receberá um e-mail com os detalhes da sua compra.</p>
+    <button onclick="window.location.href='index.html'">Voltar ao início</button>
   </div>
-
-  <script src="https://js.stripe.com/v3/"></script>
-  <script>
-    // Sua chave pública do Stripe
-    const stripe = Stripe('pk_test_51RkRYN2NDHd3ApIM28O0QMgeTuYzJyVi3xUthi7yEksdPT8ltr2V7BvSPLF1vCGpjl6klHKjktDmECqENQa9wVyp006x4eSinZ');
-
-    // Pega o session_id da URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const sessionId = urlParams.get('session_id');
-
-    async function buscarStatus() {
-      if (!sessionId) {
-        document.getElementById('titulo').textContent = 'Sessão não encontrada!';
-        document.getElementById('mensagem').textContent = 'Não foi possível localizar o pagamento.';
-        return;
-      }
-
-      // Busca a sessão do checkout
-      const { session } = await stripe.retrieveCheckoutSession(sessionId);
-
-      if (session && session.payment_status === 'paid') {
-        document.getElementById('titulo').textContent = '✅ Pagamento aprovado!';
-        document.getElementById('mensagem').textContent = 'Obrigado pela sua compra! Verifique seu e-mail para detalhes do pedido.';
-      } else if (session && session.payment_status === 'unpaid') {
-        document.getElementById('titulo').textContent = '❌ Pagamento não realizado';
-        document.getElementById('mensagem').textContent = 'Seu pagamento não foi concluído. Tente novamente.';
-      } else {
-        document.getElementById('titulo').textContent = 'Status desconhecido';
-        document.getElementById('mensagem').textContent = 'Não foi possível verificar o status do pagamento.';
-      }
-    }
-
-    buscarStatus();
-  </script>
 </body>
 </html>

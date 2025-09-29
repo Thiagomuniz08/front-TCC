@@ -4,20 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pagamento Seguro</title>
-  <script src="https://js.stripe.com/basil/stripe.js"></script>
   <link rel="stylesheet" href="assets/css/checkout.css" />
 </head>
 <body>
   <header>
-    <!-- Repita seu header estilizado aqui, se quiser -->
     <div class="logo">Pagamento Seguro</div>
-     <button id="voltar-topo" onclick="window.location.href='checkout.html'">
-      ❌ <span id="quantidade-carrinho"></span>
+    <button id="voltar-topo" onclick="window.location.href='checkout.html'">
+      ❌ Voltar
     </button>
   </header>
   <main>
-    <div id="checkout" style="max-width: 500px; margin: 40px auto;"></div>
+    <div id="pix-container" style="text-align:center; margin-top:30px;">
+      <h2>Finalize seu pagamento via PIX</h2>
+      <img id="pix-qr" style="max-width:300px; margin:20px auto; display:block;">
+      <p>Copia e Cola:</p>
+      <textarea id="pix-copia" readonly style="width:100%; height:100px;"></textarea>
+      <button onclick="copiar()">Copiar Código PIX</button>
+    </div>
+
+    <div id="link-container" style="text-align:center; display:none;">
+      <h2>Finalize seu pagamento</h2>
+      <a id="link-pagamento" href="#" target="_blank" class="btn-pagar">Ir para Pagamento</a>
+    </div>
   </main>
+
   <script src="assets/js/pagamento.js"></script>
 </body>
 </html>

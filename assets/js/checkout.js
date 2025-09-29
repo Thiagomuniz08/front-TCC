@@ -1,3 +1,5 @@
+const API_URL = "https://back-tcc.vercel.app";
+
 function formatarPreco(valor) {
   return `R$ ${valor.toFixed(2).replace(".", ",")}`;
 }
@@ -24,74 +26,93 @@ function atualizarTabelaCarrinho() {
         <span class="qtd">${item.quantidade}</span>
         <button class="btn-qtd" onclick="alterarQtd(${idx}, 1)">+</button>
       </td>
-      <td>R$ ${(subtotal).toFixed(2)}</td>
+      <td>${formatarPreco(subtotal)}</td>
       <td>
-        <button class="btn-remover" onclick="removerProduto(${idx})"><img src="assets/img/lixo-icon.png" alt="Remover"></button>
+        <button class="btn-remover" onclick="removerProduto(${idx})">
+          <img src="assets/img/lixo-icon.png" alt="Remover">
+        </button>
       </td>
     `;
     tabela.appendChild(tr);
   });
 
-  totalGeral.textContent = "R$ " + total.toFixed(2);
-  document.getElementById("carrinho-json").value = JSON.stringify(carrinho);
+  totalGeral.textContent = formatarPreco(total);
 }
 
-// Função para alterar quantidade
-window.alterarQtd = function(idx, delta) {
+window.alterarQtd = function (idx, delta) {
   let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
   carrinho[idx].quantidade += delta;
   if (carrinho[idx].quantidade < 1) carrinho[idx].quantidade = 1;
-  if (carrinho[idx].quantidade > 25) carrinho[idx].quantidade = 25; 
+  if (carrinho[idx].quantidade > 25) carrinho[idx].quantidade = 25;
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
   atualizarTabelaCarrinho();
 };
 
-window.removerProduto = function(idx) {
+window.removerProduto = function (idx) {
   let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
   carrinho.splice(idx, 1);
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
   atualizarTabelaCarrinho();
 };
 
-// Chama ao carregar a página
-document.addEventListener("DOMContentLoaded", atualizarTabelaCarrinho);
+function obterCarrinho() {
+  const carrinhoJSON = localStorage.getItem("carrinho");
+  return carrinhoJSON ? JSON.parse(carrinhoJSON) : [];
+}
 
+async function finalizarPedido() {
+  const carrinho = obterCarrinho();
+  if (carrinho.length === 0) {
+    alert("Seu carrinho está vazio.");
+    return;
+  }
 
-const stripe = Stripe('pk_test_51RkRYN2NDHd3ApIM28O0QMgeTuYzJyVi3xUthi7yEksdPT8ltr2V7BvSPLF1vCGpjl6klHKjktDmECqENQa9wVyp006x4eSinZ');
+  const token = localStorage.getItem("token");
+  if (!token) {
+    alert("Você precisa estar logado para finalizar a compra.");
+    window.location.href = "login.html";
+    return;
+  }
 
-async function realizarPagamento() {
   try {
-    const response = await fetch('https://back-tcc.vercel.app/criar-checkout', {
-      method: 'POST',
+    const response = await fetch(`${API_URL}/pedidos`, {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
       },
-      body: JSON.stringify({ carrinho: obterCarrinho() }),
+      body: JSON.stringify({
+        itens: carrinho,
+        metodoPagamento: "PIX" // ou "BOLETO", "CREDIT_CARD"
+      }),
     });
 
-    const { url } = await response.json();
-    window.location.href = url;
-  } catch (error) {
-    console.error('Erro ao criar sessão de checkout:', error);
-    alert('Ocorreu um erro ao processar o pagamento. Por favor, tente novamente.');
+    const data = await response.json();
+
+    if (!response.ok) {
+      alert(data.message || "Erro ao criar pedido.");
+      return;
+    }
+
+    // PIX
+    if (data.pixQrCode || data.pixCopiaCola) {
+      localStorage.setItem("pixPagamento", JSON.stringify(data));
+      window.location.href = "pagamento.html";
+      return;
+    }
+
+    // Link de boleto ou cartão
+    if (data.linkPagamento) {
+      window.location.href = data.linkPagamento;
+      return;
+    }
+
+    alert("Pedido criado com sucesso! Aguarde o pagamento.");
+  } catch (err) {
+    console.error("Erro ao finalizar pedido:", err);
+    alert("Erro ao finalizar pedido. Tente novamente.");
   }
 }
 
-function obterCarrinho() {
-  // Supondo que você esteja armazenando o carrinho no localStorage
-  const carrinhoJSON = localStorage.getItem('carrinho');
-  if (carrinhoJSON) {
-    const carrinho = JSON.parse(carrinhoJSON);
-    return carrinho.map(item => ({
-      nome: item.nome,
-      descricao: item.descricao || '',
-      preco: item.preco,
-      quantidade: item.quantidade
-    }));
-  }
-  return [];
-}
-
-function irParaPagamento() {
-  window.location.href = "pagamento.html";
-}
+window.irParaPagamento = finalizarPedido;
+document.addEventListener("DOMContentLoaded", atualizarTabelaCarrinho);
