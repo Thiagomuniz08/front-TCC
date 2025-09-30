@@ -1,3 +1,22 @@
+async function carregarProdutos() {
+  const res = await fetch("https://back-tcc.vercel.app/produtos");
+  const produtos = await res.json();
+
+  const container = document.getElementById("produtos");
+  container.innerHTML = produtos.map(p => `
+    <div class="product">
+      <img src="${p.imagem}" alt="${p.nome}">
+      <p>${p.nome}</p>
+      <span class="new-price">R$ ${p.preco.toFixed(2)}</span>
+      <button onclick="adicionarAoCarrinho(${p.id}, '${p.nome}', '${p.descricao}', ${p.preco}, '${p.imagem}')">
+        Adicionar ao Carrinho
+      </button>
+    </div>
+  `).join("");
+}
+
+carregarProdutos();
+
 function adicionarAoCarrinho(id, nome, descricao, preco, imagem) {
     let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
