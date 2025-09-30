@@ -15,6 +15,7 @@ body {
 /* Cabeçalho */
 header {
     display: flex;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
     background-color: #c4520c;
@@ -28,13 +29,17 @@ header {
     margin-right: 6px;
 }
 }
-.logo img {
-  height: 100px; 
-  border-radius: 10000px;/* ou o tamanho que ficar melhor */
-}
 .logo {
-  display: flex;
+    font-size: 15px;
+    font-weight: bold;
+     display: flex;
   align-items: center;
+
+}
+.logo img {
+  height: 60px; 
+  border-radius: 10px;
+
 }
     .carousel-track {
       display: flex;
@@ -85,7 +90,7 @@ header {
     }
 
 .logo {
-    font-size: 28px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -102,7 +107,7 @@ nav ul li a {
     transition: 0.3s;
 }
 
-nav ul li a:hover {
+nav ul li a:hover {               
     color: #ffeb3b;
 }
 
@@ -236,19 +241,99 @@ nav ul li a:hover {
   width: 100%;
 }
 
+/* Container dos produtos */
 .products {
-  display: flex;
+  display: inline-flex;
   transition: transform 0.3s ease-in-out;
   will-change: transform;
-  border-radius: 60px;
+  gap: 20px; /* espaçamento mais equilibrado entre cards */
 }
 
+/* Card do produto */
 .product {
-  min-width: 250px; /* ou o valor exato da largura do card */
-  margin-right: 20px; /* ajuste conforme seu layout */
-  flex-shrink: 0; /* IMPEDIR que o card encolha */
-  box-sizing: border-box;
-  border-radius: 5%;
+  position: relative;
+  min-width: 250px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagem */
+.product img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product img:hover {
+  transform: scale(1.05);
+}
+
+/* Nome do produto */
+.product p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 8px 0 4px;
+}
+
+/* Preço antigo */
+.product span {
+  display: block;
+  font-size: 14px;
+  color: #999;
+  text-decoration: line-through;
+  margin-bottom: 3px;
+}
+
+/* Preço novo */
+.product .new-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #c4520c;
+  margin-bottom: 12px;
+}
+
+/* Botão */
+.product .btn {
+  display: inline-block;
+  background: #ffeb3b;
+  color: #000000;
+  padding: 10px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.product .btn:hover {
+  background: #e67e22;
+}
+
+/* Tag de desconto */
+.discount-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #ffeb3b;
+  color: #333;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .product:hover {
