@@ -88,6 +88,7 @@ async function finalizarPedido() {
     });
 
     const data = await response.json();
+    console.log("📦 Resposta do backend:", data);
 
     if (!response.ok) {
       alert(data.message || "Erro ao criar pedido.");
