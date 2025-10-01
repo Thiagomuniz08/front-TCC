@@ -1,7 +1,7 @@
 [
   {
     "id": 71,
-    "nome": "Ração P/ Tartarugas Alcon Reptolife 30g",
+    "nome": "Ração Tartarugas Alcon Reptolife 30g",
     "descricao": "A ração perfeita para sua tartaruga",
     "preco": 22.90,
     "precoAntigo": 27.90,
@@ -31,7 +31,7 @@
   },
   {
     "id": 74,
-    "nome": "Ração Para Tartarugas Poytara Tigre D'Água Adulto 350g",
+    "nome": "Ração Para Tartarugas Poytara Tigre D Água Adulto 350g",
     "descricao": "A ração perfeita para sua tartaruga",
     "preco": 86.00,
     "precoAntigo": 94.90,
@@ -41,7 +41,7 @@
   },
   {
     "id": 75,
-    "nome": "Ração Jabuti Mini Sticks 75g - Poytara",
+    "nome": "Ração Jabuti Mini Sticks 75g Poytara",
     "descricao": "A ração perfeita para sua tartaruga",
     "preco": 38.90,
     "precoAntigo": 44.90,
@@ -51,7 +51,7 @@
   },
   {
     "id": 76,
-    "nome": "Ração Nutricon Turtle Baby 30g - Tartarugas Filhotes",
+    "nome": "Ração Nutricon Turtle Baby 30g Tartarugas Filhotes",
     "descricao": "A ração perfeita para sua tartaruga",
     "preco": 24.90,
     "precoAntigo": 29.90,
@@ -61,7 +61,7 @@
   },
   {
     "id": 77,
-    "nome": "Ração Nutricon Para Jabuti 315g - Nutricon Pet",
+    "nome": "Ração Nutricon Para Jabuti 315g Nutricon Pet",
     "descricao": "A ração perfeita para sua tartaruga",
     "preco": 49.90,
     "precoAntigo": 55.00,

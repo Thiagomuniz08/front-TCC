@@ -1,13 +1,13 @@
 // Função para carregar somente produtos da marca Magnus
 async function carregarProdutos() {
   try {
-    const res = await fetch("https://back-tcc.vercel.app/produtos?marca=Tartaruga");
+    const res = await fetch("https://back-tcc.vercel.app/produtos?marca=Magnus");
     const produtos = await res.json();
 
     const container = document.getElementById("produtos");
 
     if (!produtos.length) {
-      container.innerHTML = "<p>Nenhum produto da Origens disponível.</p>";
+      container.innerHTML = "<p>Nenhum produto da Magnus disponível.</p>";
       return;
     }
 

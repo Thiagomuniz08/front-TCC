@@ -19,89 +19,10 @@
             </ul>
         </nav>
     </header>
-    <div class="banner"></div>
-    <section class="best-seller">
-        <center><h2>GOLDEN</h2></center>
-        <div class="products">
-            <div class="product">
-                <img src="assets/img/golden.webp" alt="Ração Premium">
-                <p>Ração Golden Gatos Castrados Frango 1kg</p>
-                <span class="old-price"> R$ 3̶2̶,̶4̶9̶</span>
-                <div class="new-price"> R$ 29,61</div>
-                <button onclick="adicionarAoCarrinho(51, 'Ração Golden Gatos Castrados Frango 1kg', 'Ração Premium', 220.40, 'assets/img/golden.webp')">Adicionar ao Carrinho</button>
-            </div>
-            <div class="product">
-                <img src="assets/img/racao-golden-gatos-adultos-sabor-carne-1kg.webp" alt="Brinquedo para Cães">
-                <p>Ração Golden Gatos Adultos Carne 1 kg</p>
-                <span class="old-price"> R$  ̶3̶3̶,̶5̶9̶</span>
-                <div class="new-price"> R$ 30,90</div>
-                <button onclick="adicionarAoCarrinho(52, 'Ração Golden Gatos Adultos Carne 1 kg', 'Brinquedo para Cães', 257.20, 'assets/img/racao-golden-gatos-adultos-sabor-carne-1kg.webp')">Adicionar ao Carrinho</button>
-            </div>
-            <div class="product">
-                <img src="assets/img/golden2.webp" alt="Suplemento Pet">
-                <p>Ração Golden Gatos Filhotes Sabor Frango 1 kg</p>
-                <span class="old-price"> R$ 4̵1̵,̵9̵0̵</span>
-                <div class="new-price"> R$ 37,20</div>
-                <button onclick="adicionarAoCarrinho(53, 'Ração Golden Gatos Filhotes Sabor Frango 1 kg', 'Suplemento Pet', 37.20,'assets/img/golden2.webp')">Adicionar ao Carrinho</button>
-            </div>
+    
+    // Seção onde os produtos são carregados do banco
+    <section class="products" id="produtos"></section>
 
-            <div class="product">
-                <img src="assets/img/Golden3.webp" alt="Suplemento Pet">
-                <p>Ração Golden Gatos Castrados Sênior Frango 1 kg</p>
-                <span class="old-price"> R$ 2̵4̵3̵,̵6̵0̵ </span>
-                <div class="new-price"> R$ 227,20</div>
-                <button onclick="adicionarAoCarrinho(54, 'Ração Golden Gatos Castrados Sênior Frango 1 kg', 'Suplemento Pet', 227.20,'assets/img/Golden3.webp')">Adicionar ao Carrinho</button>
-            </div>
-            <div class="product">
-                <img src="assets/img/golden4.webp" alt="Suplemento Pet">
-                <p>Ração Golden Gatos Adultos Salmão 1kg</p>
-                <span class="old-price"> R$ 3̶2̶,̶5̶9̶</span>
-                <div class="new-price"> R$ 29,99</div>
-                <button onclick="adicionarAoCarrinho(55, 'Ração Golden Gatos Adultos Salmão 1kg', 'Suplemento Pet', 242.20, 'assets/img/golden4.webp')">Adicionar ao Carrinho</button>
-            </div>
-        </div>
-    </section>
-    <br>
-    <section class="best-seller">
-        <div class="products">
-            <div class="product">
-                <img src="assets/img/golden5.webp" alt="Ração Premium">
-                <p>Ração Golden Gatos Castrados Salmão 1 kg</p>
-                <span class="old-price"> R$ 3̶3̶,̶5̶9̶</span>
-                <div class="new-price"> R$ 30,90</div>
-                <button onclick="adicionarAoCarrinho(56, 'Ração Golden Gatos Castrados Salmão 1 kg', 'Ração Premium', 84.90, 'assets/img/golden5.webp')">Adicionar ao Carrinho</button>
-            </div>
-            <div class="product">
-                <img src="assets/img/golden6.webp" alt="Brinquedo para Cães">
-                <p>Ração Golden Gatos Adultos Sabor Frango 1kg</p>
-                <span class="old-price"> R$ 3̶3̶,̶4̶9̶</span>
-                <div class="new-price"> R$ 29,90</div>
-                <button onclick="adicionarAoCarrinho(57, 'Ração Golden Gatos Adultos Sabor Frango 1kg', 'Brinquedos para Cães', 84.59, 'assets/img/golden6.webp')">Adicionar ao Carrinho</button>
-            </div>
-            <div class="product">
-                <img src="assets/img/Golden7.png" alt="Suplemento Pet">
-                <p>Ração Golden Special Gatos Adultos Frango e Carne 3 kg</p>
-                <span class="old-price"> R$ 3̶1̶,̶4̶9̶</span>
-                <div class="new-price"> R$ 28,99</div>
-                <button onclick="adicionarAoCarrinho(58, 'Ração Golden Special Gatos Adultos Frango e Carne 3 kg', 'Suplemento Pet', 322.49, 'assets/img/Golden7.png')">Adicionar ao Carrinho</button>
-            </div>
-
-            <div class="product">
-                <img src="assets/img/Golden8.png" alt="Suplemento Pet">
-                <p>Ração Golden Special Gatos Adultos Castrados Frango e Carne 3 kg</p>
-                <span class="old-price"> R$ 6̶6̶,̶9̶0̶</span>
-                <div class="new-price"> R$63,49</div>
-                <button onclick="adicionarAoCarrinho(59, 'Ração Golden Special Gatos Adultos Castrados Frango e Carne 3 kg', 'Suplemento Pet', 39.49, 'assets/img/Golden8.png')">Adicionar ao Carrinho</button>
-            </div>
-            <div class="product">
-                <img src="assets/img/golden10.webp" alt="Suplemento Pet">
-                <p>Ração Golden Gatos Castrados Carne 1 kg</p>
-                <span class="old-price"> R$ 3̶2̶,̶9̶1̶</span>
-                <div class="new-price"> R$ 29,49</div>
-                <button onclick="adicionarAoCarrinho(60, 'Ração Golden Gatos Castrados Carne 1 kg', 'Suplemento Pet', 243.89, 'assets/img/golden10.webp')">Adicionar ao Carrinho</button>
-            </div>
-        </div>
-    </section>
     <div id="carrinho-sidebar" class="sidebar">
     <div class="conteudo">
     <button class="fechar" onclick="fecharCarrinho()">X</button>
@@ -131,7 +52,7 @@
         <button onclick="adicionarAoCarrinho(13, 'Origens Premium Especial Cães Adultos Sabor Carne e Cereais', 'Suplemento Pet', 37.20, 'assets/img/origens3.webp')">Adicionar ao Carrinho</button>
     </div>
 
-    <script src="assets/js/funcoes.js"></script>
+    <script src="assets/js/golden.js"></script>
 
 </body>
 </html>

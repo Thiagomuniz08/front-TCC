@@ -24,86 +24,10 @@
         </ul>
     </nav>
     </header>
-    <div class="banner"></div>
-    <br>
-    <div class="products">
-        <div class="product">
-            <img src="assets/img/origens.webp" alt="Ração Premium">
-            <p>Origens Premium Especial Cães Adultos Portes Mini e Pequeno Sabor Carne e Cereais</p>
-            <span class="old-price"> R$ 2̵4̵4̵,̵9̵0̵ </span>
-            <div class="new-price"> R$220,40</div>
-            <button onclick="adicionarAoCarrinho(11, 'Origens Premium Especial Cães Adultos Portes Mini e Pequeno Sabor Carne e Cereais', 'Ração Premium', 220.40, 'assets/img/origens.webp')">Adicionar ao Carrinho</button>
-        </div>
-        <div class="product">
-            <img src="assets/img/origens2.webp" alt="Brinquedo para Cães">
-            <p>Origens Premium Especial Cães Adultos Sabor Frango e Cereais</p>
-            <span class="old-price"> R$ 2̵6̵2,̵9̵0̵ </span>
-            <div class="new-price"> R$257,20</div>
-            <button onclick="adicionarAoCarrinho(12, 'Origens Premium Especial Cães Adultos Sabor Frango e Cereais', 'Ração Premium', 257.20, 'assets/img/origens2.webp')">Adicionar ao Carrinho</button>
-        </div>
-        <div class="product">
-            <img src="assets/img/origens3.webp" alt="Suplemento Pet">
-            <p>Origens Premium Especial Cães Adultos Sabor Carne e Cereais</p>
-            <span class="old-price"> R$ 4̵1̵,̵9̵0̵</span>
-            <div class="new-price"> R$ 37,20</div>
-            <button onclick="adicionarAoCarrinho(13, 'Origens Premium Especial Cães Adultos Sabor Carne e Cereais', 'Suplemento Pet', 37.20, 'assets/img/origens3.webp')">Adicionar ao Carrinho</button>
-        </div>
-        <div class="product">
-            <img src="assets/img/origens4.webp" alt="Suplemento Pet">
-            <p>Origens Premium Especial Cães Adultos Porte Grande Carne e Cereais</p>
-            <span class="old-price"> R$ 2̵4̵3̵,̵6̵0̵ </span>
-            <div class="new-price"> R$227,20</div>
-            <button onclick="adicionarAoCarrinho(14, 'Origens Premium Especial Cães Adultos Porte Grande Carne e Cereais', 'Suplemento Pet', 227.20, 'assets/img/origens4.webp')">Adicionar ao Carrinho</button>
-        </div>
-        <div class="product">
-            <img src="assets/img/origens5.webp" alt="Suplemento Pet">
-            <p>Origens Premium Especial Cães Sênior Portes Médio e Grande Sabor Frango e Cereais</p>
-            <span class="old-price"> R$ 2̵5̵8̵,̵9̵0̵ </span>
-            <div class="new-price"> R$242,20</div>
-            <button onclick="adicionarAoCarrinho(15, 'Origens Premium Especial Cães Sênior Portes Médio e Grande Sabor Frango e Cereais', 'Suplemento Pet', 242.20, 'assets/img/origens5.webp')">Adicionar ao Carrinho</button>
-        </div>
-    </div>
-    <br>
+   
+     // Seção onde os produtos são carregados do banco
+    <section class="products" id="produtos"></section>
 
-    <section class="best-seller">
-        <div class="products">
-            <div class="product">
-                <img src="assets/img/origens6.png" alt="Ração Premium">
-                <p>Origens Premium Especial Raças Específicas Cães Adultos Labrador e Golden Retriever</p>
-                <span class="old-price"> R$ 2̵4̵4̵,̵9̵0̵ </span>
-                <div class="new-price"> R$220,40</div>
-                <button onclick="adicionarAoCarrinho(16, 'Origens Premium Especial Raças Específicas Cães Adultos Labrador e Golden Retriever', 'Ração Premium', 220.40, 'assets/img/origens6.png')">Adicionar ao Carrinho</button>
-            </div>
-            <div class="product">
-                <img src="assets/img/origens7.png" alt="Brinquedo para Cães">
-                <p>Origens Premium Especial Raças Específicas Cães Adultos Pit Bull e Rottweiler</p>
-                <span class="old-price"> R$ 2̵6̵2,̵9̵0̵ </span>
-                <div class="new-price"> R$257,20</div>
-                <button onclick="adicionarAoCarrinho(17, 'Origens Premium Especial Raças Específicas Cães Adultos Pit Bull e Rottweiler', 'Ração Premium', 257.20, 'assets/img/origens7.png')">Adicionar ao Carrinho</button>
-            </div>
-            <div class="product">
-                <img src="assets/img/origens8.png" alt="Suplemento Pet">
-                <p>Origens Premium Especial Light Cães Adultos Portes Mini e Pequeno Sabor Frango e Cereais</p>
-                <span class="old-price"> R$ 4̵1̵,̵9̵0̵</span>
-                <div class="new-price"> R$ 37,20</div>
-                <button onclick="adicionarAoCarrinho(18, 'Origens Premium Especial Light Cães Adultos Portes Mini e Pequeno Sabor Frango e Cereais', 'Suplemento Pet', 37.20, 'assets/img/origens8.png')">Adicionar ao Carrinho</button>
-            </div>
-            <div class="product">
-                <img src="assets/img/origens9.png" alt="Suplemento Pet">
-                <p>Origens Premium Especial Energy Cães Adultos Sabor Frango e Cereais</p>
-                <span class="old-price"> R$ 2̵4̵3̵,̵6̵0̵ </span>
-                <div class="new-price"> R$227,20</div>
-                <button onclick="adicionarAoCarrinho(19, 'Origens Premium Especial Energy Cães Adultos Sabor Frango e Cereais', 'Suplemento Pet', 227.20, 'assets/img/origens9.png')">Adicionar ao Carrinho</button>
-            </div>
-            <div class="product">
-                <img src="assets/img/origens10.png" alt="Suplemento Pet">
-                <p>Origens Premium Especial Light Cães Adultos Portes Médio e Grande Sabor Frango e Cereais</p>
-                <span class="old-price"> R$ 2̵5̵8̵,̵9̵0̵ </span>
-                <div class="new-price"> R$242,20</div>
-                <button onclick="adicionarAoCarrinho(20, 'Origens Premium Especial Light Cães Adultos Portes Médio e Grande Sabor Frango e Cereais', 'Suplemento Pet', 242.20, 'assets/img/origens10.png')">Adicionar ao Carrinho</button>
-            </div>
-        </div>
-    </section>
     <div id="carrinho-sidebar" class="sidebar">
         <div class="conteudo">
         <button class="fechar" onclick="fecharCarrinho()">X</button>
@@ -137,6 +61,6 @@
       </div>
       
     
-<script src="assets/js/funcoes.js"></script>
+<script src="assets/js/origens.js"></script>
 </body>
 </html>
